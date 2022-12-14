@@ -1,0 +1,29 @@
+    <h1>About {{ name }}</h1>
+    <p>I am {{ age }} years old and I have {{ boardGames }} boardgames!!</p>
+    <p>This is my index page</p>
+    {{#if warning}}
+      <p>You have a warning young lady ⚠️</p>
+      {{else}}
+      <p>You don't have a warning!</p>
+    {{/if}}
+
+    {{#if isTeacher}}
+      <p>You have a warning young lady ⚠️</p>
+      {{else}}
+      <p>You don't have a warning!</p>
+    {{/if}}
+
+    <ul>
+      {{#each siblings}}
+        <li>{{this}}</li>
+        {{else}}
+        <p>No siblings for this user</p>
+      {{/each}}  
+    </ul>
+
+      {{#each pets}}
+        {{>card this}}
+      {{else}}
+        <p>No dogs so far.</p>
+      {{/each}}
+

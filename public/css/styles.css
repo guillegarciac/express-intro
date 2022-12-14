@@ -1,3 +1,9 @@
 body {
   background-color: aquamarine;
 }
+
+.card {
+  border: 1px solid purple;
+  margin-bottom: 20px;
+  padding: 20px;
+}
